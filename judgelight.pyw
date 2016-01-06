@@ -125,11 +125,11 @@ def judge():
     judgebtn['state']='normal'
     cfgbtn['state']='normal'
 
-cfgbtn=ttk.Button(tk,text='Config',command=config)
-cfgbtn.grid(row=0,column=0,padx=3)
-judgebtn=ttk.Button(tk,text='Judge it!',width=15,command=judge,state='disabled')
-judgebtn.grid(row=0,column=1,padx=3,pady=3)
+cfgbtn=ttk.Button(tk,text='Config',command=config,width=7)
+cfgbtn.grid(row=0,column=0,padx=2)
+judgebtn=ttk.Button(tk,text='Judge!',width=10,command=judge,state='disabled')
+judgebtn.grid(row=0,column=1,padx=2,pady=2)
 
-Label(tk,textvariable=msg).grid(row=0,column=2,padx=5)
+Label(tk,textvariable=msg).grid(row=0,column=2,padx=3)
 
 mainloop()

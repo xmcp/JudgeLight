@@ -3,7 +3,6 @@ import urllib.request
 import urllib.parse
 import bs4
 import time
-import socket
 import base64
 
 class Error(Exception):
